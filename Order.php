@@ -22,7 +22,7 @@ class Order extends Component
         return $order::findOne($id);
     }
     
-    public function getStatInMoth($month = null, $where = null, $where = null)
+    public function getStatInMoth($month = null, $where = null)
     {
         if(!$month) {
             $month = date('Y-m');
@@ -44,7 +44,7 @@ class Order extends Component
         return array_map('intval', $result);
     }
 
-    public function getStatByDate($date, $where = null, $where = null)
+    public function getStatByDate($date, $where = null)
     {
         $order = $this->order;
         
